@@ -6,7 +6,7 @@ function feetToMile(feetValue){
     const mileValue=feetValue/5280;
     return mileValue;
 }
-var value=feetToMile(5280);
+const value=feetToMile(100000);
 console.log(value);
 
 
@@ -23,7 +23,7 @@ function woodCalculator(chair,table,bed){
     let total=chairs+tables+beds;
     return total;
 }
-var woodValue=woodCalculator(5,2,3);
+const woodValue=woodCalculator(5,2,3);
 console.log(woodValue);
 
 
@@ -54,5 +54,25 @@ function brickCalculator(buildingHeight){
     }
     return brickCount=brickCount+(height*10*1000);  
 }
-var total=brickCalculator(0);
+const total=brickCalculator(11);
 console.log(total);
+
+
+
+
+//Tiny Friend searching
+function tinyFriend(friendsList){
+    var tiny=friendsList[0];
+    for(var i=1;i<friendsList.length;i++){
+        var friend=friendsList[i];
+        if(friend.length<tiny.length){
+            tiny=friend;
+        }
+    } 
+    if(tiny==""){
+        return "please make a friend list without empty string"
+    }
+    return tiny;
+}
+const friends=tinyFriend(["amir","sakiv","pranak","pro"])
+console.log(friends)
