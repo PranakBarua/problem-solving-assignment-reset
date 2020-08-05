@@ -6,8 +6,7 @@ function feetToMile(feetValue){
     const mileValue=feetValue/5280;
     return mileValue;
 }
-const value=feetToMile(100000);
-console.log(value);
+
 
 
 
@@ -23,8 +22,7 @@ function woodCalculator(chair,table,bed){
     let total=chairs+tables+beds;
     return total;
 }
-const woodValue=woodCalculator(5,2,3);
-console.log(woodValue);
+
 
 
 
@@ -54,8 +52,7 @@ function brickCalculator(buildingHeight){
     }
     return brickCount=brickCount+(height*10*1000);  
 }
-const total=brickCalculator(11);
-console.log(total);
+
 
 
 
@@ -74,5 +71,4 @@ function tinyFriend(friendsList){
     }
     return tiny;
 }
-const friends=tinyFriend(["amir","sakiv","pranak","pro"])
-console.log(friends)
+
